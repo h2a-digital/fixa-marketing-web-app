@@ -1,26 +1,26 @@
 export const how = [
   {
     number: 1,
-    title: 'Describe Your Vision',
+    title: 'Upload Your Photo',
     description:
-      'Write a prompt with your preferred style, subject, and placement ideas. Specific details produce sharper first results.',
+      'Add an old, faded, or low-quality image from your camera roll and let Fixa detect what needs restoration.',
   },
   {
     number: 2,
-    title: 'Generate Concepts',
+    title: 'Choose AI Tools',
     description:
-      'InkForge creates custom tattoo designs in seconds.',
+      'Apply Enhance, Colorize, Descratch, and Enlighten with one tap, or combine them for deeper restoration.',
   },
   {
     number: 3,
-    title: 'Preview with Try On',
+    title: 'Recreate Severe Damage',
     description:
-      'Overlay any design on a body photo to evaluate scale and placement in real context — before any ink touches skin.',
+      'Use Recreate when portraits are heavily damaged to intelligently rebuild missing and distorted facial details.',
   },
   {
     number: 4,
-    title: 'Save & Share',
+    title: 'Save and Share',
     description:
-      'Organise favourites in your gallery, build a visual brief over time, and export clean references to share with your artist.',
+      'Compare before/after results, download restored photos, and share meaningful memories with your family.',
   },
 ];

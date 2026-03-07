@@ -2,10 +2,7 @@
 
 import { site } from '@/content/site';
 import { motion } from 'framer-motion';
-import { useState, useMemo } from 'react';
-import { ContactSchema } from '@/lib/validations';
-import SupportPresenter from './Support.presenter';
-import type { SupportFormVM } from './Support.model';
+import { useState } from 'react';
 
 export function Support() {
   const [formData, setFormData] = useState({
@@ -20,7 +17,6 @@ export function Support() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1500));
 
     setIsSubmitting(false);
@@ -41,10 +37,10 @@ export function Support() {
           <div className="mb-12 text-center">
             <div className="mb-4 text-5xl">💬</div>
             <h2 className="mb-4 text-4xl font-black text-gray-900 md:text-5xl">Get in Touch</h2>
-            <p className="text-xl text-gray-600">Questions about Fixa? We&apos;re here to help.</p>
+            <p className="text-xl text-gray-600">Questions about restoring your photos? We can help.</p>
           </div>
 
-          <div className="rounded-3xl bg-[#F5F5F7] p-8 md:p-12">
+          <div className="rounded-3xl border border-[#E5E5E7] bg-[#F5F5F7] p-8 md:p-12">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="mb-2 block text-sm font-semibold text-gray-900">
@@ -56,7 +52,7 @@ export function Support() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full rounded-xl border border-gray-300 px-4 py-3 transition-colors focus:border-black focus:ring-2 focus:ring-black focus:ring-offset-2"
+                  className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 transition-colors focus:border-[#9F6845] focus:ring-2 focus:ring-[#9F6845] focus:ring-offset-2"
                   placeholder="Your name"
                   disabled={isSubmitting}
                 />
@@ -72,7 +68,7 @@ export function Support() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full rounded-xl border border-gray-300 px-4 py-3 transition-colors focus:border-black focus:ring-2 focus:ring-black focus:ring-offset-2"
+                  className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 transition-colors focus:border-[#9F6845] focus:ring-2 focus:ring-[#9F6845] focus:ring-offset-2"
                   placeholder="your@email.com"
                   disabled={isSubmitting}
                 />
@@ -88,7 +84,7 @@ export function Support() {
                   rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full resize-none rounded-xl border border-gray-300 px-4 py-3 transition-colors focus:border-black focus:ring-2 focus:ring-black focus:ring-offset-2"
+                  className="w-full resize-none rounded-xl border border-gray-300 bg-white px-4 py-3 transition-colors focus:border-[#9F6845] focus:ring-2 focus:ring-[#9F6845] focus:ring-offset-2"
                   placeholder="How can we help you?"
                   disabled={isSubmitting}
                 />
@@ -97,7 +93,7 @@ export function Support() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full rounded-xl bg-black px-8 py-4 font-bold text-white transition-all hover:scale-[1.02] hover:bg-gray-800 active:scale-95 disabled:cursor-not-allowed disabled:opacity-50"
+                className="w-full rounded-xl bg-[#9F6845] px-8 py-4 font-bold text-white transition-all hover:scale-[1.02] hover:bg-[#8E5D3D] active:scale-95 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
@@ -124,9 +120,7 @@ export function Support() {
             </div>
 
             <div className="mt-8 border-t border-gray-300 pt-8">
-              <p className="mb-4 text-center text-sm font-semibold text-gray-500">
-                Legal Information
-              </p>
+              <p className="mb-4 text-center text-sm font-semibold text-gray-500">Legal Information</p>
               <div className="flex flex-wrap justify-center gap-6 text-sm">
                 <a href="/legal/privacy" className="font-medium text-gray-700 hover:text-black">
                   Privacy Policy

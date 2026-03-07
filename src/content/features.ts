@@ -1,32 +1,38 @@
 export const features = [
   {
-    icon: '✍️',
-    title: 'Prompt-Driven Creation',
+    icon: '✨',
+    title: 'One-Tap Photo Enhancement',
     description:
-      'Describe your style, subject, mood, and placement in plain language. InkForge turns your words into tattoo-ready concepts without any design experience required.',
+      'Use Enhance to sharpen details and improve clarity while keeping faces, textures, and tones natural.',
   },
   {
-    icon: '🖤',
-    title: 'Style-Aware Generation',
+    icon: '🎨',
+    title: 'Realistic Colorize',
     description:
-      'Fine-line, blackwork, neo-traditional, geometric — the AI understands tattoo aesthetics and keeps your artistic direction consistent across every variation.',
+      'Bring black-and-white memories back to life with believable colors tuned for skin, clothing, and background elements.',
   },
   {
-    icon: '🧪',
-    title: 'Try On Preview',
+    icon: '🧹',
+    title: 'Descratch & Clean Up',
     description:
-      'Overlay any design on a body photo directly from the Result screen. Evaluate scale, proportion, and placement in context before you ever step into a studio.',
+      'Remove scratches, dust, folds, and scan artifacts from aged prints without flattening important details.',
   },
   {
-    icon: '🗂️',
-    title: 'History & Gallery',
+    icon: '💡',
+    title: 'Enlighten Exposure',
     description:
-      'Every generation is automatically saved and organised. Compare variations side by side, revisit past ideas, and build a visual brief over time.',
+      'Fix dim lighting, harsh contrast, and faded tones to recover balanced portraits and scenes in seconds.',
   },
   {
-    icon: '📤',
-    title: 'Export-Ready References',
+    icon: '🧬',
+    title: 'Recreate Damaged Portraits',
     description:
-      'Share high-quality files with your artist in one tap. No screenshots, no cropping — just a clean reference that communicates your vision precisely.',
+      'Rebuild heavily damaged faces and missing areas with identity-preserving reconstruction for meaningful restorations.',
+  },
+  {
+    icon: '👨‍👩‍👧‍👦',
+    title: 'Combine Family Photos',
+    description:
+      'Create shared ancestor composites from separate photos to produce one emotional, high-quality family image.',
   },
 ];

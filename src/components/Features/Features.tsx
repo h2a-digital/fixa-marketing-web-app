@@ -13,12 +13,12 @@ export function Features() {
           viewport={{ once: true }}
           className="mb-16 text-center"
         >
-          <div className="mb-4 text-5xl">✨</div>
+          <div className="mb-4 text-5xl">🛠️</div>
           <h2 className="mb-4 text-4xl font-black text-gray-900 md:text-5xl">
-            Built for Real Tattoo Decisions
+            Restoration Tools That Feel Human
           </h2>
           <p className="mx-auto max-w-2xl text-xl text-gray-600">
-            Fast concepting, realistic previews, and export-ready references in one clean workflow.
+            Built for old photos, damaged prints, and family memories that deserve to last.
           </p>
         </motion.div>
 
@@ -30,7 +30,7 @@ export function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="rounded-3xl border border-transparent bg-[#F5F5F7] p-8 transition-all duration-300 hover:-translate-y-1 hover:border-gray-200 hover:shadow-xl"
+              className="rounded-3xl border border-[#E5E5E7] bg-[#F5F5F7] p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#D8D8DA] hover:shadow-xl"
             >
               <div className="mb-4 text-5xl">{feature.icon}</div>
               <h3 className="mb-3 text-xl font-bold text-gray-900">{feature.title}</h3>

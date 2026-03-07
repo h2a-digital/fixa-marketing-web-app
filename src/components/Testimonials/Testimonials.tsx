@@ -15,10 +15,10 @@ export function Testimonials() {
         >
           <div className="mb-4 text-5xl">💝</div>
           <h2 className="mb-4 text-4xl font-black text-gray-900 md:text-5xl">
-            Trusted by Tattoo Explorers
+            Loved by People Preserving Family Memories
           </h2>
           <p className="mx-auto max-w-2xl text-xl text-gray-600">
-            Placeholder feedback from early users refining ideas before studio sessions.
+            Early feedback from users restoring meaningful photos with Fixa.
           </p>
         </motion.div>
 
@@ -30,7 +30,7 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="rounded-3xl border border-gray-100 bg-white p-8 shadow-sm"
+              className="rounded-3xl border border-[#E5E5E7] bg-white p-8 shadow-sm"
             >
               <div className="mb-4 flex gap-1">
                 {[...Array(testimonial.rating)].map((_, i) => (

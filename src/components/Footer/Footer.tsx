@@ -8,10 +8,9 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-gray-200 bg-white py-12">
+    <footer className="border-t border-[#E5E5E7] bg-white py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8 grid gap-8 md:grid-cols-4">
-          {/* Brand */}
           <div className="md:col-span-2">
             <div className="mb-4 flex items-center gap-3">
               <Image
@@ -25,12 +24,11 @@ export function Footer() {
               <span className="text-xl font-bold text-gray-900">{site.app.name}</span>
             </div>
             <p className="max-w-sm text-gray-600">
-              AI-powered tattoo generation for faster concepting, realistic Try On previews, and
-              export-ready references.
+              AI photo restoration for enhancing, colorizing, repairing, and recreating family
+              memories with realistic results.
             </p>
           </div>
 
-          {/* Legal */}
           <div>
             <h4 className="mb-4 font-bold text-gray-900">Legal</h4>
             <ul className="space-y-3 text-gray-600">
@@ -51,10 +49,7 @@ export function Footer() {
             <h4 className="mb-4 font-bold text-gray-900">Contact</h4>
             <ul className="space-y-3 text-gray-600">
               <li>
-                <a
-                  href={`mailto:${site.company.email}`}
-                  className="transition-colors hover:text-black"
-                >
+                <a href={`mailto:${site.company.email}`} className="transition-colors hover:text-black">
                   {site.company.email}
                 </a>
               </li>
@@ -62,8 +57,7 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="flex flex-col items-center justify-between gap-4 border-t border-gray-200 pt-8 md:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-[#E5E5E7] pt-8 md:flex-row">
           <p className="text-sm text-gray-500">
             © {currentYear} {site.company.name}. All rights reserved.
           </p>

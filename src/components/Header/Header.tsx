@@ -64,7 +64,6 @@ export function Header() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
-          {/* Logo */}
           <Link
             href="/"
             onClick={handleLogoClick}
@@ -81,7 +80,6 @@ export function Header() {
             <span>{site.app.name}</span>
           </Link>
 
-          {/* Desktop Nav */}
           <nav className="hidden items-center gap-8 lg:flex">
             {navItems.map((item) => (
               <a
@@ -96,13 +94,12 @@ export function Header() {
             <a
               href="#download"
               onClick={(e) => scrollToSection(e, '#download')}
-              className="rounded-full bg-black px-6 py-2.5 text-sm font-semibold text-white transition-all hover:scale-105 hover:bg-gray-800 active:scale-95"
+              className="rounded-full bg-[#9F6845] px-6 py-2.5 text-sm font-semibold text-white transition-all hover:scale-105 hover:bg-[#8E5D3D] active:scale-95"
             >
               Download Fixa
             </a>
           </nav>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="p-2 text-gray-900 lg:hidden"
@@ -128,7 +125,6 @@ export function Header() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <nav className="-mx-4 border-t border-gray-200 bg-white/95 px-4 py-4 shadow-md backdrop-blur-md sm:-mx-6 sm:px-6 lg:hidden">
             <div className="flex flex-col gap-4">
@@ -145,7 +141,7 @@ export function Header() {
               <a
                 href="#download"
                 onClick={(e) => scrollToSection(e, '#download')}
-                className="rounded-full bg-black px-6 py-3 text-center text-base font-semibold text-white"
+                className="rounded-full bg-[#9F6845] px-6 py-3 text-center text-base font-semibold text-white"
               >
                 Download Fixa
               </a>

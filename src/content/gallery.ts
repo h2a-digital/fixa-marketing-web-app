@@ -1,22 +1,22 @@
 export const gallery = [
   {
     id: 1,
-    alt: 'InkForge home screen with prompt and style suggestions',
+    alt: 'Fixa restoration workspace with old photo upload and enhancement tools',
     src: '/screenshots/home.PNG',
   },
   {
     id: 2,
-    alt: 'Generated tattoo concept result detail screen',
+    alt: 'Before and after comparison showing restored portrait clarity and color',
     src: '/screenshots/result.PNG',
   },
   {
     id: 3,
-    alt: 'Tattoo generation history and saved gallery',
+    alt: 'History timeline of restored photos and saved improvements',
     src: '/screenshots/history.PNG',
   },
   {
     id: 4,
-    alt: 'Dark mode for late-night chats',
+    alt: 'Dark mode for late-night restores',
     src: '/screenshots/dark.PNG',
   },
 ];

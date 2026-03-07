@@ -17,11 +17,9 @@ export function Gallery() {
           viewport={{ once: true }}
           className="mb-16 text-center"
         >
-          <h2 className="mb-4 text-4xl font-black text-gray-900 md:text-5xl">
-            A Look Inside the App
-          </h2>
+          <h2 className="mb-4 text-4xl font-black text-gray-900 md:text-5xl">Before & After in One App</h2>
           <p className="mx-auto max-w-2xl text-xl text-gray-600">
-            See the full flow from prompt to result, Try On, gallery, and export.
+            Explore restoration previews, saved versions, and your complete enhancement history.
           </p>
         </motion.div>
 
@@ -49,7 +47,6 @@ export function Gallery() {
             </div>
             <div className="absolute top-0 left-1/2 h-6 w-1/3 -translate-x-1/2 rounded-b-2xl bg-gray-900" />
 
-            {/* Nav buttons */}
             <button
               onClick={() =>
                 setSelectedIndex((prev) => (prev - 1 + gallery.length) % gallery.length)
@@ -84,7 +81,6 @@ export function Gallery() {
             </button>
           </div>
 
-          {/* Dots */}
           <div className="mt-8 flex justify-center gap-2">
             {gallery.map((_, index) => (
               <button
@@ -93,7 +89,7 @@ export function Gallery() {
                 type="button"
                 className={`transition-all ${
                   selectedIndex === index
-                    ? 'h-3 w-8 rounded-full bg-black'
+                    ? 'h-3 w-8 rounded-full bg-[#9F6845]'
                     : 'h-3 w-3 rounded-full bg-gray-300 hover:bg-gray-400'
                 }`}
                 aria-label={`View image ${index + 1}`}

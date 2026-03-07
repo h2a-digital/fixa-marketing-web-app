@@ -1,6 +1,6 @@
-# InkForge Marketing Website
+# Fixa Marketing Website
 
-> A modern, responsive marketing website for the InkForge AI tattoo generator app.
+> A modern, responsive marketing website for Fixa, an AI-powered photo restoration app.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16.0-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)
@@ -20,9 +20,9 @@
 
 ## 🎯 Overview
 
-InkForge Marketing Website is a high-performance, SEO-optimized marketing site built with Next.js 16 and the App Router. It showcases the InkForge mobile app - an AI-powered experience that generates a custom tattoo design from a text prompt.
+Fixa Marketing Website is a high-performance, SEO-optimized marketing site built with Next.js 16 and the App Router. It showcases the Fixa mobile app, an AI-powered experience focused on restoring old, faded, scratched, and low-quality photos with realistic results.
 
-**Live Site:** [https://inkforge.h2adigital.com](https://inkforge.h2adigital.com)
+**Live Site:** [https://fixa.h2adigital.com](https://fixa.h2adigital.com)
 
 ## ✨ Features
 
@@ -152,7 +152,7 @@ Create a `.env.local` file with these variables:
 
 ```env
 # Site Configuration
-NEXT_PUBLIC_SITE_URL=https://inkforge.h2adigital.com
+NEXT_PUBLIC_SITE_URL=https://fixa.h2adigital.com
 
 # PostHog Analytics
 NEXT_PUBLIC_POSTHOG_KEY=your_posthog_project_key
@@ -231,5 +231,5 @@ All event names use the `EVT` constants for type safety.
 ## 📞 Support
 
 - **Email**: support@h2adigital.com
-- **Website**: [https://inkforge.h2adigital.com](https://inkforge.h2adigital.com)
+- **Website**: [https://fixa.h2adigital.com](https://fixa.h2adigital.com)
 - **Company**: H2A Digital LLC

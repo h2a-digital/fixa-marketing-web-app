@@ -8,25 +8,23 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-[#F5F5F7] via-white to-[#EFEFF2]"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-[#F5F5F7] via-white to-[#EFEFEA]"
     >
-      {/* Animated background orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
           animate={{ scale: [1, 1.2, 1], x: [0, 50, 0], y: [0, 30, 0] }}
           transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-black/5 blur-3xl"
+          className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-[#9F6845]/10 blur-3xl"
         />
         <motion.div
           animate={{ scale: [1, 1.3, 1], x: [0, -30, 0], y: [0, -40, 0] }}
           transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-black/5 blur-3xl"
+          className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-[#8E5D3D]/10 blur-3xl"
         />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 py-32 sm:px-6 lg:px-8 lg:py-40">
         <div className="grid items-center gap-12 lg:grid-cols-2">
-          {/* Left: Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -37,23 +35,23 @@ export function Hero() {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ type: 'spring', delay: 0.2 }}
-              className="mb-6 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-2 shadow-sm backdrop-blur-sm"
+              className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#E5E5E7] bg-white px-4 py-2 shadow-sm"
             >
-              <span className="text-2xl">🖋️</span>
-              <span className="text-sm font-semibold text-gray-900">AI-Powered Tattoo Design</span>
+              <span className="text-2xl">📸</span>
+              <span className="text-sm font-semibold text-[#8E5D3D]">AI Photo Restoration</span>
             </motion.div>
 
             <h1 className="mb-6 text-5xl leading-tight font-black text-gray-900 md:text-6xl lg:text-7xl">
-              Describe.
+              Restore Old Photos.
               <br />
-              <span className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
-                Generate. Try On.
+              <span className="bg-gradient-to-r from-[#8E5D3D] to-[#B37A56] bg-clip-text text-transparent">
+                Make Memories Clear Again.
               </span>
             </h1>
 
             <p className="mx-auto mb-8 max-w-xl text-xl font-medium text-gray-600 md:text-2xl lg:mx-0">
-              Turn a text prompt into custom tattoo designs, preview them on your photos, and keep
-              your best concepts ready to share.
+              Enhance, colorize, remove damage, and recreate missing portrait details in one fast,
+              realistic workflow.
             </p>
 
             <div className="mb-8 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
@@ -66,7 +64,6 @@ export function Hero() {
               </motion.div>
             </div>
 
-            {/* Trust badges */}
             <div className="flex flex-wrap items-center justify-center gap-6 text-sm lg:justify-start">
               <div className="flex items-center gap-2">
                 <div className="flex">
@@ -76,20 +73,15 @@ export function Hero() {
                     </span>
                   ))}
                 </div>
-                <span className="font-semibold text-gray-700">1M+ Generations</span>
+                <span className="font-semibold text-gray-700">Trusted by families</span>
               </div>
-              {/* <div className="flex items-center gap-2 text-gray-700">
-                <span className="text-xl">🔒</span>
-                <span className="font-semibold">100% Private</span>
-              </div> */}
               <div className="flex items-center gap-2 text-gray-700">
                 <span className="text-xl">⚡</span>
-                <span className="font-semibold">30-Second Results</span>
+                <span className="font-semibold">Realistic results in seconds</span>
               </div>
             </div>
           </motion.div>
 
-          {/* Right: Phone mockup */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -101,7 +93,7 @@ export function Hero() {
                 <div className="aspect-[9/19] overflow-hidden rounded-[2.5rem] bg-white">
                   <Image
                     src="/screenshots/home.PNG"
-                    alt="InkForge app preview with tattoo generation controls"
+                    alt="Fixa app preview showing AI restoration controls"
                     width={360}
                     height={760}
                     className="h-full w-full object-cover"
@@ -115,7 +107,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

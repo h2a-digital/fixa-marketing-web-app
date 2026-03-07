@@ -7,19 +7,18 @@ export function Download() {
   return (
     <section
       id="download"
-      className="relative overflow-hidden bg-gradient-to-br from-[#F5F5F7] via-white to-[#EFEFF2] py-32"
+      className="relative overflow-hidden bg-gradient-to-br from-[#F5F5F7] via-white to-[#EFEFEA] py-32"
     >
-      {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden opacity-20">
         <motion.div
           animate={{ y: [0, -20, 0], x: [0, 10, 0] }}
           transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute top-20 left-10 h-24 w-32 rounded-3xl bg-black/20 blur-2xl"
+          className="absolute top-20 left-10 h-24 w-32 rounded-3xl bg-[#9F6845]/40 blur-2xl"
         />
         <motion.div
           animate={{ y: [0, 20, 0], x: [0, -15, 0] }}
           transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute right-20 bottom-20 h-32 w-40 rounded-full bg-black/20 blur-2xl"
+          className="absolute right-20 bottom-20 h-32 w-40 rounded-full bg-[#8E5D3D]/40 blur-2xl"
         />
       </div>
 
@@ -29,7 +28,6 @@ export function Download() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          {/* Emoji decoration */}
           <motion.div
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
@@ -37,21 +35,21 @@ export function Download() {
             transition={{ type: 'spring', delay: 0.2 }}
             className="mb-8 flex justify-center gap-4 text-6xl"
           >
-            <span>🖋️</span>
+            <span>📸</span>
             <span>✨</span>
-            <span>🧪</span>
+            <span>🕰️</span>
           </motion.div>
 
           <h2 className="mb-6 text-5xl font-black text-gray-900 md:text-6xl lg:text-7xl">
-            Ready to Design
+            Bring Old Memories
             <br />
-            <span className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
-              Your Next Tattoo?
+            <span className="bg-gradient-to-r from-[#8E5D3D] to-[#B37A56] bg-clip-text text-transparent">
+              Back to Life
             </span>
           </h2>
 
           <p className="mx-auto mb-12 max-w-2xl text-xl font-medium text-gray-600 md:text-2xl">
-            Go from idea to polished concept in seconds, then preview and export with confidence.
+            Restore, enhance, and share meaningful family photos with realistic AI results.
           </p>
 
           <div className="mb-12 flex flex-col justify-center gap-4 sm:flex-row">
@@ -64,7 +62,6 @@ export function Download() {
             </motion.div>
           </div>
 
-          {/* Trust badges */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -74,11 +71,11 @@ export function Download() {
           >
             <div className="flex items-center gap-2">
               <span className="text-2xl">⭐</span>
-              <span className="font-semibold">4.9/5 Rating</span>
+              <span className="font-semibold">4.9/5 User Rating</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-2xl">📱</span>
-              <span className="font-semibold">1M+ Downloads</span>
+              <span className="text-2xl">🖼️</span>
+              <span className="font-semibold">Save and share restored photos</span>
             </div>
           </motion.div>
         </motion.div>

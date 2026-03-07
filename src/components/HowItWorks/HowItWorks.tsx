@@ -13,10 +13,10 @@ export function HowItWorks() {
           viewport={{ once: true }}
           className="mb-16 text-center"
         >
-          <div className="mb-4 text-5xl">🎯</div>
-          <h2 className="mb-4 text-4xl font-black text-gray-900 md:text-5xl">Four Simple Steps</h2>
+          <div className="mb-4 text-5xl">🧭</div>
+          <h2 className="mb-4 text-4xl font-black text-gray-900 md:text-5xl">How Fixa Works</h2>
           <p className="mx-auto max-w-2xl text-xl text-gray-600">
-            From idea to artist-ready concept in under a minute.
+            From faded original to realistic restoration in four quick steps.
           </p>
         </motion.div>
 
@@ -30,17 +30,16 @@ export function HowItWorks() {
               transition={{ delay: index * 0.1 }}
               className="relative"
             >
-              <div className="h-full rounded-3xl border border-gray-100 bg-white p-8 shadow-lg">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-black text-2xl font-bold text-white">
+              <div className="h-full rounded-3xl border border-[#E5E5E7] bg-white p-8 shadow-lg">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#9F6845] text-2xl font-bold text-white">
                   {step.number}
                 </div>
                 <h3 className="mb-3 text-xl font-bold text-gray-900">{step.title}</h3>
                 <p className="leading-relaxed text-gray-600">{step.description}</p>
               </div>
 
-              {/* Connection line (desktop only) */}
               {index < how.length - 1 && (
-                <div className="absolute top-14 left-full -z-10 hidden h-0.5 w-full bg-gray-200 lg:block" />
+                <div className="absolute top-14 left-full -z-10 hidden h-0.5 w-full bg-[#E5E5E7] lg:block" />
               )}
             </motion.div>
           ))}
