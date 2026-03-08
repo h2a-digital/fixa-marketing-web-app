@@ -1,23 +1,19 @@
 export const faq = [
   {
-    q: 'How much does InkForge cost?',
-    a: 'Pricing varies by plan and is shown in the app before you start a generation.',
+    q: 'How much does Fixa cost?',
+    a: 'Pricing varies by plan and is shown in the app before you start restoring your photos.',
   },
   {
-    q: 'What makes a good prompt?',
-    a: 'Be specific: describe the tattoo style (blackwork, fine-line, neo-traditional), the subject, mood, and your intended placement. The more precise your prompt, the stronger the first result.',
+    q: 'What kinds of photos work best with Fixa?',
+    a: 'Fixa works best with portraits and family photos that are faded, scratched, blurry, dim, or black and white. Clear scans or well-lit photos usually produce the strongest restoration results.',
   },
   {
-    q: 'Can I preview designs on my own body?',
-    a: 'Yes. From any Result screen, tap Try On to overlay the design on a photo — adjust scale and position to evaluate real-world placement before you commit.',
+    q: 'What can Fixa improve in an old photo?',
+    a: 'You can use Fixa to enhance clarity, add realistic color, remove scratches and dust, fix lighting, and reconstruct severely damaged portrait details. Some photos can also be combined into one shared family image.',
   },
   {
-    q: 'Are my generations saved automatically?',
-    a: 'Every design is stored in your History. You can revisit, compare concepts side by side, and export your favourites at any time.',
-  },
-  {
-    q: 'What file formats can I export?',
-    a: 'InkForge exports high-quality image files ready to share directly with your tattoo artist or save to your camera roll.',
+    q: 'Are my restored photos saved automatically?',
+    a: 'Your restored results can be viewed and saved from the app, and Fixa also includes a history view so you can revisit previous improvements.',
   },
   {
     q: 'How do I get help?',

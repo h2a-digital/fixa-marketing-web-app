@@ -17,17 +17,17 @@ export const metadata: Metadata = {
     template: `%s | ${site.app.name}`,
   },
   description:
-    'Describe your tattoo idea in seconds, generate custom designs with AI, try them on your photos, and export favorites for later.',
+    'Restore old, faded, scratched, and low-quality photos with AI-powered enhancement, colorization, cleanup, and portrait reconstruction.',
   keywords: [
-    'ai tattoo generator',
-    'tattoo design app',
-    'tattoo prompt',
-    'tattoo try on',
-    'tattoo overlay',
-    'tattoo mockup',
-    'tattoo design gallery',
-    'custom tattoo design',
-    'InkForge',
+    'ai photo restoration',
+    'photo enhancement app',
+    'old photo restoration',
+    'photo colorizer',
+    'scratch removal',
+    'portrait restoration',
+    'family photo restoration',
+    'photo cleanup app',
+    'Fixa',
   ],
   authors: [{ name: site.company.name, url: env.SITE_URL }],
   creator: site.company.name,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     url: env.SITE_URL,
     title: `${site.app.name} - ${site.app.tagline}`,
     description:
-      'Generate custom tattoo designs from text prompts, preview them with Try On, and export your favorites.',
+      'Bring old memories back to life with AI restoration tools for enhancement, colorization, scratch removal, and damaged portrait repair.',
     siteName: site.app.name,
     images: [
       {
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     creator: '@hakim98bologna',
     title: `${site.app.name} - ${site.app.tagline}`,
     description:
-      'From prompt to tattoo concept: generate, try on, save to gallery, and export references.',
+      'Restore and enhance old photos with realistic AI tools built for damaged, faded, and black-and-white memories.',
     images: ['/images/icon.png'],
   },
   robots: {

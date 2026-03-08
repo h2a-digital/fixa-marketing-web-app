@@ -4,6 +4,15 @@ import { motion } from 'framer-motion';
 import { how } from '@/content/how';
 
 export function HowItWorks() {
+  const largeGridClass =
+    how.length === 1
+      ? 'lg:grid-cols-1 lg:max-w-xl'
+      : how.length === 2
+        ? 'lg:grid-cols-2 lg:max-w-4xl'
+        : how.length === 3
+          ? 'lg:grid-cols-3 lg:max-w-6xl'
+          : 'lg:grid-cols-4';
+
   return (
     <section id="how-it-works" className="bg-gradient-to-b from-[#F5F5F7] to-white py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -16,11 +25,11 @@ export function HowItWorks() {
           <div className="mb-4 text-5xl">🧭</div>
           <h2 className="mb-4 text-4xl font-black text-gray-900 md:text-5xl">How Fixa Works</h2>
           <p className="mx-auto max-w-2xl text-xl text-gray-600">
-            From faded original to realistic restoration in four quick steps.
+            From faded original to realistic restoration in a few quick steps.
           </p>
         </motion.div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className={`mx-auto grid gap-8 md:grid-cols-2 ${largeGridClass}`}>
           {how.map((step, index) => (
             <motion.div
               key={step.number}
