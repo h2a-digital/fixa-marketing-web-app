@@ -57,7 +57,7 @@ export async function POST(req: Request) {
       host: env.SMTP_HOST,
       port: env.SMTP_PORT,
       user: env.SMTP_USER,
-      hasPassword: env.SMTP_PASS,
+      hasPassword: Boolean(env.SMTP_PASS),
       from: env.CONTACT_FROM,
       to: env.CONTACT_TO,
     });

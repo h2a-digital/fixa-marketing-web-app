@@ -2,26 +2,31 @@
 
 import { site } from '@/content/site';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
+import SupportPresenter from './Support.presenter';
 
 export function Support() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
+    hp: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const presenter = useMemo(() => new SupportPresenter(), []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    const ok = await presenter.submitForm(formData);
 
     setIsSubmitting(false);
+    if (!ok) return;
+
     setIsSubmitted(true);
-    setFormData({ name: '', email: '', message: '' });
+    setFormData({ name: '', email: '', message: '', hp: '' });
 
     setTimeout(() => setIsSubmitted(false), 5000);
   };
@@ -71,6 +76,23 @@ export function Support() {
                   className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 transition-colors focus:border-[#9F6845] focus:ring-2 focus:ring-[#9F6845] focus:ring-offset-2"
                   placeholder="your@email.com"
                   disabled={isSubmitting}
+                />
+              </div>
+
+              <div>
+                <label htmlFor="company" className="sr-only">
+                  Company
+                </label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  autoComplete="off"
+                  tabIndex={-1}
+                  value={formData.hp}
+                  onChange={(e) => setFormData({ ...formData, hp: e.target.value })}
+                  className="hidden"
+                  aria-hidden="true"
                 />
               </div>
 
